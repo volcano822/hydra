@@ -5,7 +5,7 @@ import logging
 import socket
 import urlparse
 
-from properties.items import PropertiesItem
+from hydra.items import PropertiesItem
 
 import scrapy
 from scrapy.http import Request

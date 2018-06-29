@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for properties project
+# Scrapy settings for hydra project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,13 +9,13 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'properties'
+BOT_NAME = 'hydra'
 
-SPIDER_MODULES = ['properties.spiders']
-NEWSPIDER_MODULE = 'properties.spiders'
+SPIDER_MODULES = ['hydra.spiders']
+NEWSPIDER_MODULE = 'hydra.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-# USER_AGENT = 'properties (+http://www.yourdomain.com)'
+# USER_AGENT = 'hydra (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -48,13 +48,13 @@ DEFAULT_REQUEST_HEADERS = {
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 # SPIDER_MIDDLEWARES = {
-#    'properties.middlewares.PropertiesSpiderMiddleware': 543,
+#    'hydra.middlewares.PropertiesSpiderMiddleware': 543,
 # }
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 # DOWNLOADER_MIDDLEWARES = {
-#    'properties.middlewares.PropertiesDownloaderMiddleware': 543,
+#    'hydra.middlewares.PropertiesDownloaderMiddleware': 543,
 # }
 
 # Enable or disable extensions
@@ -66,7 +66,7 @@ DEFAULT_REQUEST_HEADERS = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 # ITEM_PIPELINES = {
-#     # 'properties.pipelines.PropertiesPipeline': 300,
+#     # 'hydra.pipelines.PropertiesPipeline': 300,
 #     'scrapyapperyio.ApperyIoPipeline': 300,
 # }
 

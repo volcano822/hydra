@@ -7,7 +7,7 @@ import logging
 import random
 import socket
 
-from properties.items import JdOrderItem
+from hydra.items import JdOrderItem
 
 import re
 import scrapy

@@ -5,8 +5,8 @@
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/items.html
 
-import scrapy
 from scrapy.item import Item, Field
+
 
 class PropertiesItem(Item):
     # define the fields for your item here like:
@@ -32,13 +32,30 @@ class PropertiesItem(Item):
     spider = Field()
     server = Field()
     date = Field()
-  
+
 
 class JdOrderItem(Item):
     # Primary fields
     name = Field()
     product_id = Field()
     category_string = Field()
+
+    # Housekeeping fields
+    url = Field()
+    project = Field()
+    spider = Field()
+    server = Field()
+    date = Field()
+
+
+class DoubanBookItem(Item):
+    # Primary fields
+    name = Field()
+    tag = Field()
+    publish_info = Field()
+    rating_score = Field()
+    rating_persons = Field()
+    abstract = Field()
 
     # Housekeeping fields
     url = Field()
